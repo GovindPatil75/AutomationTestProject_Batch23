@@ -1,0 +1,53 @@
+Automation Testing:
+---------
+Testing any application feature with the help of Automation tool .
+-----------
+Protector
+Sahi
+Sahi pro
+Appium 
+Selenium
+Ranorex
+
+Manual Testing Dis 
+-------------------------
+1.required more resources 
+2.Regression Testing ---time consuming 
+3.CrossBrowser Testing --- time consuming and its difficults
+    5 Browser -- 1 Test -- 10 min =5*10 =50 min 
+4.test cycle duration increase 
+
+Automation Testing Adv
+-------------------------
+1. required less resources 
+2. Regression Testing -- less time required 
+3. crossBowser Testing -- required less time and its easy
+4. Test cycle duration decrease 
+
+Selenium
+===============
+1.open sources - no licence required 
+2.support multiple langauges -- Java ,C#,JS,Python ...
+3.support multiple O.S.
+4.its support crossBrowser Test
+
+Selenium Dis
+----------------
+1. we can automate only Web Application - we can not automate StandAlone Application EX. Calculator 
+2. captcha and Barcode --we can not Automate  
+3. file upload and file download task --- AutoIT /Robot class 
+
+======================================================================
+
+Maven Project  ---
+Maven -- Build Managment tool 
+
+src/main/java
+src/main/resources
+src/test/java
+  com.Test
+     Test1
+     Test2
+src/test/resources
+pom.xml  ---- we add dependancy
+Maven depenadancies ---- requried jar file
