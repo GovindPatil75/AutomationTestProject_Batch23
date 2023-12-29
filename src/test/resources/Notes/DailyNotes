@@ -51,3 +51,33 @@ src/test/java
 src/test/resources
 pom.xml  ---- we add dependancy
 Maven depenadancies ---- requried jar file
+=================================================
+
+Selenium Arch
+
+Search context (I) --extends-WebDriver (I)---Implements--Remote WebDriver Class (C)-extends--
+Multiple Browser driver classes (ChromeDriver ,EdgeDriver,..) (C)
+
+
+Maven repo :
+
+https://mvnrepository.com/
+
+=========================
+Selenium dependancy
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.15.0</version>
+</dependency>
+
+
+
+
+
+
+
+
+
+
