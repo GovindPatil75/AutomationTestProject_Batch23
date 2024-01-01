@@ -72,6 +72,25 @@ Selenium dependancy
     <version>4.15.0</version>
 </dependency>
 
+===============================================
+
+First Script Automation Script
+-------------
+Selenium -- Add
+WebDriverManager --- Browser execution --- setup 
+
+Browser.exe 
+system.setProperty(key,value);
+
+
+
+
+
+
+
+
+
+
 
 
 
