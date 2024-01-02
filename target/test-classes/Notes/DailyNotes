@@ -81,7 +81,16 @@ WebDriverManager --- Browser execution --- setup
 
 Browser.exe 
 system.setProperty(key,value);
+====================================================
+navigation 
 
+driver.navigate().to("url");
+
+driver.navigate.back();
+
+driver.navigate.forward();
+
+driver.navigate.refresh();
 
 
 
