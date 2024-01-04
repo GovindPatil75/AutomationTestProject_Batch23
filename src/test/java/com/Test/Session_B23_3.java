@@ -14,6 +14,7 @@ public class Session_B23_3 {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		
+		
 		//Navigation 
 	
 		driver.navigate().to("https://mvnrepository.com/");

@@ -91,10 +91,32 @@ driver.navigate.back();
 driver.navigate.forward();
 
 driver.navigate.refresh();
+============================================
+WebElement -- Any thing on Webpage 
 
+text field ,Radio Button ,check box ,Button ,link ,Img ,text
 
+Locators -- we identify webelement 
 
+8 types of Locators 
 
+1.Id
+2.Name
+3.className
+4.Tagname
+5.Xpath
+6.LinkText
+7.Partial link text
+8.CSS 
+
+WebElement EmailID=driver.findElement(By.name("email"));
+EmailID.sendKeys("Test123@gmail.com");
+
+WebElement Password=driver.findElement(By.name("pass"));
+Password.sendkeys("12345678");
+
+WebElement LoginButton=driver.findElement(By.name("login"));
+LoginButton.click();
 
 
 
