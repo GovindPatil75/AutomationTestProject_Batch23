@@ -122,9 +122,21 @@ LoginButton.click();
 Task Url = https://demo.guru99.com/test/newtours/register.php
 
 
+ID  -Locator 
 
+WebElement element=driver.findElement(By.id("value"));
 
+if(element.isenabled && element.isDispalyed){
+   element.sendkeys("Test");
+}
+else{
+  //syso
+}
 
+T && T =T
+T && F =F
+F && T =F
+F && F =F
 
 
 
