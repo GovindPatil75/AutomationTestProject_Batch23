@@ -137,6 +137,36 @@ T && T =T
 T && F =F
 F && T =F
 F && F =F
+==================================================
+Xpath ---> WebElement identify
+
+ 1.Absolute Xpath
+ ------------------------
+ parent node navigate immidiate child node ---Webelement 
+ Xpath ---
+ 
+ Start "/"
+ 1. Xpath expression lengthly 
+ 2. UI changes --- xpath collapse 
+ 
+ 1234567
+ 
+ WebElement element =driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input"));
+
+ 2.Relative Xpath 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
