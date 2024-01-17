@@ -154,11 +154,81 @@ Xpath ---> WebElement identify
  WebElement element =driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input"));
 
  2.Relative Xpath 
+==========================
+parent node navigate any child node 
+Child Node 
+
+-start "//"
+
+Xpath by attribute 
+Xpath by text
+Xpath by contains 
+Xpath by index 
+
+================================================
+
+DOM ---html 
+
+tagname -- anything after <
+ex. <input
+    <div
+    <frame
+    <li
+
+attribute
+attributevalue
+
+attribute="attributevalue"
+ex.
+id="123"
+name="test"
+type="text"
+
+text
+------------
+>text<
+
+ex.>Forgotten password?<
+
+1.Xpath by attribute == ID,name
+-----------------------------------
+
+//tagname[@attributename='attributevalue']
+
+ex.//input[@id='email']
+
+WebElement element=driver.findElement(By.xpath("//input[@id='email']"));
+
+2. Xpath by contains 
+---------------------------
+//tagname[contains(@attributename,'static value attribute')]
+ex.//button[contains(@id,'u_0_5')]
+
+//tagname[conatins(text(),'static value of text')]
+
+ex .//a[contains(text(),'Forgotten ')]
 
 
+WebElement element=driver.findElement(By.xpath("//button[contains(@id,'u_0_5')]"));
 
 
+3. Xpath by text
+------------------------
+//tagname[text()='text value']
 
+ex.//a[text()='Forgotten password?']
+
+
+WebElement element=driver.findElement(By.xpath("//a[text()='Forgotten password?']"));
+
+4. Xpath by index 
+----------------------
+
+(xpath expression)[index]
+ex.
+(//input[@type='text'])[3]
+
+WebElement element=driver.findElement(By.xpath("(//input[@type='text'])[3]"));
 
 
 
