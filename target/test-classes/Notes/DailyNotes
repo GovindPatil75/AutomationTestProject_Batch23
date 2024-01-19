@@ -230,6 +230,39 @@ ex.
 
 WebElement element=driver.findElement(By.xpath("(//input[@type='text'])[3]"));
 
+==========================================
+//tagname[@attributename='value']
+//tagname[contains(@attributename,'static value ')]
+//tagname[contains(text(),'static value')]
+
+//tagname[text()='text value ']
+
+(xpath expression)[index]
+
+================================================
+
+Select Class 
+
+DropDown ---tagname select -- Select class 
+
+WebElement Country=driver.findElement(By.xpath("xpath expression"));
+Select dropdown= new Select(Country);
+
+dropdown.selectByIndex(3);
+dropdown.selectByvalue("ANGOLA");
+dropdown.selectByVisibletext("ANTARCTICA");
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
