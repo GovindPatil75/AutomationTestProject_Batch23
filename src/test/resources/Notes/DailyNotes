@@ -241,22 +241,57 @@ WebElement element=driver.findElement(By.xpath("(//input[@type='text'])[3]"));
 
 ================================================
 
-Select Class 
+Select Class -How to handle dropdown 
 
 DropDown ---tagname select -- Select class 
 
 WebElement Country=driver.findElement(By.xpath("xpath expression"));
 Select dropdown= new Select(Country);
-
 dropdown.selectByIndex(3);
-dropdown.selectByvalue("ANGOLA");
+dropdown.selectByvalue("8");
 dropdown.selectByVisibletext("ANTARCTICA");
 
 
+List<WebElement> list=dropdown.getOptions();
+
+list.get(0)
+String text=list.get(1).gettext();
 
 
+for(int i=0;i<list.size();i++){
+
+  String value=list.get(i).gextext();
+
+  if(value.equals("ABC")){
+  
+    list.get(i).click();
+    break;
+  }
+
+}
+
+== equals 
+
+====================================================
+
+How to capture Screenshot 
+----------------
+
+FullPage 
+WebElement
+
+SC -->Webdriver ,TakesScreenshot---RWC ---browserDriver classes 
+TakesScreenshot --Interface 
 
 
+How to capture FullPage
+--------------------------------
+TakesScreenshot ts=(TakesScreenshot)driver; // WebDriver driver=new ChromeDriver();
+                                            
+TakesScreenshot ts=driver;  // ChromeDriver driver=new ChromeDriver();
+File src=ts.getScrrenshotAs(outputType.FILE);
+File destn=new File(Location//Test.png);
+FileHandler.copyFile(src,destn);
 
 
 
