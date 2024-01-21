@@ -293,6 +293,43 @@ File src=ts.getScrrenshotAs(outputType.FILE);
 File destn=new File(Location//Test.png);
 FileHandler.copyFile(src,destn);
 
+String Location =System.getproperty("user.dir");
+
+String RM=RandomString.make(5);
+
+// use date to save scrrenshot name 
+
+SimpleDateFormat formater=new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+Date date=new Date();
+String Currentdate=formater.format(date);
+String cDate=Currentdate.replace("/","_").replace(" ", "_").repalce(":","_");
+=================================
+
+How to get Screenshot of WebElement
+
+WebElement element=driver.findElement(By.xpath("Xpath expression"));
+File src=element.getscreenshotAs(outPutType.FILE);
+File destn=new File(location\\elementname.png);
+FileUtils.copyfile(src,destn);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

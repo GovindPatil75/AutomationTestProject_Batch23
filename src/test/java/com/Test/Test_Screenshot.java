@@ -2,6 +2,8 @@ package com.Test;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -23,13 +25,24 @@ public class Test_Screenshot {
 		// Full Page Screenshot 
 		
 		String path=System.getProperty("user.dir");
+		 //C:\Users\Dell\eclipse-workspace\AutomationTestProject_Batch23
 		System.out.println(path);
 		
-		String RM=RandomString.make(5);
+		SimpleDateFormat formater=new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Date date=new Date();
+		String currentDate=formater.format(date);
+		
+		System.out.println(currentDate);
+		
+		String CDate=currentDate.replace("/", "_").replace(" ","_").replace(":", "_");
+		
+		System.out.println(CDate);
+		
+		String RM=RandomString.make(3); //ABC12 // rts13 //pqr
 		
 		TakesScreenshot ts=driver;
 		File src=ts.getScreenshotAs(OutputType.FILE);
-		File destn=new File(path+"\\"+RM+".png");
+		File destn=new File(path+"\\"+CDate+".png");
 		FileUtils.copyFile(src, destn);
 
 	}
