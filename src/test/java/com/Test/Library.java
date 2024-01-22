@@ -6,8 +6,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Library {
@@ -27,4 +29,14 @@ public class Library {
 		FileUtils.copyFile(src, Destn);
 		
 	}
+	
+	public static void scrollToElement(ChromeDriver driver,WebElement element) {
+		
+		JavascriptExecutor js=driver;
+		js.executeScript("arguments[0].scrollIntoView();", element);
+			
+	}
+	
+	
+	
 }

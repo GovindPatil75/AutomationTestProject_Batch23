@@ -312,6 +312,29 @@ File src=element.getscreenshotAs(outPutType.FILE);
 File destn=new File(location\\elementname.png);
 FileUtils.copyfile(src,destn);
 
+==========================================
+
+Scroll on WebPage 
+----------------------
+Pixel 
+WebElement
+
+SC -WD ,TS ,JS --RWC --Multiple Browser driver classes 
+
+JavaScriptExecutor js=(JavaScriptExecutor)driver; // WebDriver driver
+
+JavaScriptExecutor js=driver; //ChromeDriver driver
+
+//Top -Bottom 
+js.executeScript("window.scrollBy(0,350)"," "); // vertically 350 pixel
+
+//Bottom -top
+js.executeScript("window.scrollBy(0,-350)"," "); // vertically -350 pixel
+
+
+
+
+
 
 
 
