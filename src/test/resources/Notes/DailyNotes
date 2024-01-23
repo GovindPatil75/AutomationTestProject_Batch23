@@ -332,14 +332,24 @@ js.executeScript("window.scrollBy(0,350)"," "); // vertically 350 pixel
 js.executeScript("window.scrollBy(0,-350)"," "); // vertically -350 pixel
 
 
+================================================================
+
+Actions class 
+-------------------------------------
+mouse movement and keyboard actions 
+
+element --mouse hover --options ---click
+double click 
+right click 
+source drag destn drop 
+
+element --Upper case 
+text data -ctrl + c ctrl +v
 
 
+Actions act=new Actions(driver);
 
-
-
-
-
-
+act.movetoelement(element).click().build().perform();
 
 
 

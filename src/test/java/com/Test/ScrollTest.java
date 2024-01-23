@@ -35,6 +35,15 @@ public class ScrollTest {
 		WebElement submit=driver.findElement(By.xpath("//input[@name='submit']"));
 		
 		js.executeScript("arguments[0].scrollIntoView();", submit);
+		
+		
+		// Scroll to at bottom 
+		
+		//document.body.scrollHeight =944
+		
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+		
+		
 
 	}
 
