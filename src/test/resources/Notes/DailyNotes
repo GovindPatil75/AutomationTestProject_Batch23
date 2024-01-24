@@ -351,12 +351,35 @@ Actions act=new Actions(driver);
 
 act.movetoelement(element).click().build().perform();
 
+================================================================
+
+Actions act=new Actions(driver);
+		WebElement src=driver.findElement(By.xpath("(//a[@class='button button-orange'])[5]"));
+		WebElement target=driver.findElement(By.xpath("(//li[@class='placeholder'])[1]"));
+		act.dragAndDrop(src, target).build().perform();
+		
+		Library.dragDropActions(driver, src, target);
+		
+		
+		==============================================
+		
+		keyDown()
+		KeyUp()
+		
+		ex . WebELement ---Uppercase ---Keyboard TEST
+		
+		Actions act=new Actions(driver);
+
+      act.keyDown(element ,Keys.SHIFT).sendkeys("test").keyUp(Keys.SHIFT).build().perform();
 
 
-
-
-
-
+       ctrl+a  -select
+       
+       ctrl +c 
+       
+       element -hit
+       
+       ctrl +v
 
 
 

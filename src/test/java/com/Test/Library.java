@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class Library {
 
@@ -37,6 +38,11 @@ public class Library {
 			
 	}
 	
+	public static void dragDropActions(ChromeDriver driver,WebElement src,WebElement target) {
+		Actions act=new Actions(driver);
+		act.dragAndDrop(src, target).build().perform();
+		
+	}
 	
 	
 }
