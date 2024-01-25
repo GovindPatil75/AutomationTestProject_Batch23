@@ -381,6 +381,44 @@ Actions act=new Actions(driver);
        
        ctrl +v
 
+====================================================================
+How to read Test Data from Excel
+
+WebElement element=driver.findElement(By.xpath("Xpath expression"));
+element.sendKeys("Test@gmail.com");
+
+excel --row ,cell
+
+Apache POI --
+
+poi common 
+poi ooxml 
+
+--------------------------
+excel --
+//step 1
+String path="C:\Users\Dell\eclipse-workspace\AutomationTestProject_Batch23\TestData\Data.xlsx";
+//step 2
+FileInutStream file=new FileInutStream(path);
+//step 3
+XSSFWorkbook wb=new XSSFWorkbook(file);
+//step 4
+String data=wb.getsheetname("Sheet1").getrow(0).getcell(0).getStringcellvalue();
+
+WebElement element=driver.findElement(By.xpath("Xpath expression"));
+element.sendKeys(data);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
