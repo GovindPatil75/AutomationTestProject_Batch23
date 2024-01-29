@@ -408,6 +408,25 @@ String data=wb.getsheetname("Sheet1").getrow(0).getcell(0).getStringcellvalue();
 WebElement element=driver.findElement(By.xpath("Xpath expression"));
 element.sendKeys(data);
 
+----------------------------------------------
+
+double d=12.0 ;
+Numeric Test data
+
+String path="excel location";
+FileInputStream fis=new FileInputStream(path);
+XSSFWorkbook wb=new XSSFWorkbook(fis);
+
+double data=wb.getsheetname("Sheet2").getrow(0).getcell(1).getnumericeCellValue();
+
+String data1=String.valueof(data);
+
+WebElement element=driver.findElement(By.xpath("Xpath expression"));
+element.sendKeys(data1);
+
+
+
+
 
 
 

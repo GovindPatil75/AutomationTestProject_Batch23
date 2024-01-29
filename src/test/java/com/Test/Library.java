@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -57,4 +58,16 @@ public class Library {
 		
 		
 	}
+	
+	public static Properties getConfigData() throws Exception {
+		
+		  String path="C:\\Users\\Dell\\eclipse-workspace\\AutomationTestProject_Batch23\\TestData\\Config.Properties";
+		  FileInputStream file=new FileInputStream(path);
+		  Properties pro=new Properties();
+		  pro.load(file);
+		  return pro;
+	
+		}
+	
+	
 }
