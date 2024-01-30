@@ -3,6 +3,7 @@ package com.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -11,7 +12,7 @@ public class AlertHandleTest {
 	public static void main(String[] args) throws Exception {
 		
 		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver=new ChromeDriver();
+		RemoteWebDriver driver=new ChromeDriver();
 		driver.get("https://demo.guru99.com/test/delete_customer.php");
 		driver.manage().window().maximize();
 		
@@ -20,6 +21,7 @@ public class AlertHandleTest {
 		driver.findElement(By.xpath("//input[@name='submit']")).click();
 		
 		// Alert Handle 
+		// private class RemoteAlert implements Alert 
 		
 		Alert alt=driver.switchTo().alert();
 		
