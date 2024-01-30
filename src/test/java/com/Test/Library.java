@@ -10,6 +10,7 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -69,5 +70,8 @@ public class Library {
 	
 		}
 	
-	
+	public static Alert handleAlert(ChromeDriver driver) {
+		
+		return driver.switchTo().alert();
+	}
 }

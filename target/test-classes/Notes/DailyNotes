@@ -423,6 +423,38 @@ String data1=String.valueof(data);
 
 WebElement element=driver.findElement(By.xpath("Xpath expression"));
 element.sendKeys(data1);
+=====================================================================
+Pop Up handling 
+---------------------------
+Alert 
+Child Browser Pop Up Handle 
+
+
+Alert --
+
+warning/notify message --- end client 
+
+Simple Alert  ---warning message --action 
+Prompt Alert  --- End client --input 
+Confirmation Alert --- confirmation from end client 
+
+
+Alert alt =driver.switchto().alert();
+
+alt.accept() ---- Ok button click
+alt.Dismiss() --- cancel button click
+alt.gettext() --- alert text 
+alt.sendkeys() --- prompt alert case -- user input 
+
+
+
+
+
+
+
+
+
+
 
 
 
