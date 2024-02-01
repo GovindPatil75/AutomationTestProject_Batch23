@@ -446,6 +446,37 @@ alt.Dismiss() --- cancel button click
 alt.gettext() --- alert text 
 alt.sendkeys() --- prompt alert case -- user input 
 
+========================================================
+
+Child Browser window PopUp
+-----------
+String parentID=driver.getwindowhandle(); // parent window ID
+
+Set<String> ALLID=driver.getwindowhandles(); // Parent+ Child window ID
+
+
+List<String> list=new ArrayList<String>(ALLID);
+
+list.get(0); // parent window ID
+list.get(1); // child window ID
+
+driver.switchto().window(list.get(1)); // switch Child Window 
+//
+driver.close();
+
+driver.switchto().window(parentID); // switch parent window 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
