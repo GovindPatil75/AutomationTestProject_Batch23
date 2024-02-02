@@ -465,6 +465,8 @@ driver.switchto().window(list.get(1)); // switch Child Window
 driver.close();
 
 driver.switchto().window(parentID); // switch parent window 
+===============================================================
+
 
 
 

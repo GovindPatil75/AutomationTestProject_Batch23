@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestList {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver=new ChromeDriver();
@@ -22,10 +22,13 @@ public class TestList {
 		
 		List<String >Expected=new ArrayList<String>();
 		
-		Expected.add(0, "Test1");
+		Expected.add(0, Library.getTestDataExcel("Sheet1", 0, 0));
 		Expected.add(1, "Test2");
 		Expected.add(2, "Test3");
 		Expected.add(3, "Test1");
+		
+		Expected.remove(1);
+		Expected.clear();
 		
 		List<WebElement> listElement=driver.findElements(By.xpath(""));
 		
