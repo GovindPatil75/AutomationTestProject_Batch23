@@ -466,15 +466,43 @@ driver.close();
 
 driver.switchto().window(parentID); // switch parent window 
 ===============================================================
+Iframe Handle /
+one html document embedded into another html document 
+publish external resource on the webpage
+
+frame/frameset -deprecated Html 5
 
 
+driver.switchto().frame(webelemnt);
+driver.switchto().frame(index int); //2 ,3
+driver.switchto().frame(string name or id);
 
+Scenario 1:
 
+MainPage--> frame1 ,frame2
 
+frame1 --> mainpage
+ driver.switchto().deafaultcontent(); // main page
+ 
+ Mainpage -->frame2 
 
+Mainapage -->frame1
+driver.switchto().frame(); //Mainapage --frame1
 
+driver.switchto().deafaultcontent(); //Mainapage <--frame1
 
+mainpage-->frame2
+driver.switchto().frame(); 
+----------------
+Scenario 2:
 
+Mainapage -->Frame1 --->innerframe
+
+driver.switchto().frame(element); //Mainapage -->Frame1
+driver.switchto().frame(element); //Frame1 --->innerframe
+
+driver.switchto().parentframe();    //Frame1 <---innerframe
+driver.switchto().deafaultcontent(); //Mainapage <--Frame1
 
 
 
