@@ -504,6 +504,51 @@ driver.switchto().frame(element); //Frame1 --->innerframe
 driver.switchto().parentframe();    //Frame1 <---innerframe
 driver.switchto().deafaultcontent(); //Mainapage <--Frame1
 
+======================================================================
+TestNG -Test Managment Tool /TESTNG Framework
+----------
+TestNG -Test Next Genration
+
+--multiple annoatation ,keyword 
+class LoginTest --Testng.xml --runner file
+
+testng Test Report -- html 
+
+@Test
+public void abc()
+{
+}
+
+@Test(enabled=false)
+public void pqr()
+{
+}
+
+@Test(invocationcount=3 ,dependsOnMethods="abc")
+public void xyz()
+{
+}
+----------------------------------
+keyword 
+
+priority
+enabled=false
+invocationcount
+dependsOnMethods
+groups
+
+Regression (160) +Critical Regression(40) = Regression Suite -- 200
+
+12.0.0
+12.1.1 -- Critical Regression Suite
+
+Testng.xml --->
+
+====================================
+Install 
+
+
+
 
 
 
