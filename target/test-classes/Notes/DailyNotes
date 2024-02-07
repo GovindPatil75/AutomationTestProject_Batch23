@@ -546,7 +546,24 @@ Testng.xml --->
 
 ====================================
 Install 
+=======================================================
+Annotation
+-- '@'prefix
+-- tag -- represent additional information about class or method
 
+Before
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod --Browser Opening 
+@Test 
+@Test
+@Test
+After 
+@AfterMethod  -Browser close
+@AfterClass
+@AfterTest
+@AfterSuite
 
 
 
