@@ -12,15 +12,16 @@ import org.testng.annotations.Test;
 
 public class Session_1 {
 	
+	@BeforeTest
+	public void BT() {
+		System.out.println("Before Test");
+	}
+	
 	@BeforeSuite
 	public void BS() {
 		System.out.println("Before Suite");
 	}
 	
-	@BeforeTest
-	public void BT() {
-		System.out.println("Before Test");
-	}
 	
 	@BeforeClass
 	public void BC() {
