@@ -572,14 +572,26 @@ enabled=false
 invocationcount=2
 dependsOnMethod
 
+===================================
+Regression ,Critical Regression 
 
+groups 
 
+Regression suite --- code fridge 
 
+Regression suite --700  -- 2 bug -dev --test 
 
+Critical Regression Suite -150 
 
+@Test(groups={"Regression"})
+public void test(){
 
+}
 
+testng.xml
+======================
 
+TC -- 20 -- peer review --- 25 ---> Test --> 25 PO review  ---5 TC Automation Script
 
 
 
