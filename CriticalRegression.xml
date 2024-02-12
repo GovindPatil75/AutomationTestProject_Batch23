@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CriticalRegressionSuite">
+<groups>
+<run>
+<include name="Critical Regression"></include>
+</run>
+</groups>
+  <test thread-count="5" name="CriticalRegressionTest">
+    <classes>
+      <class name="com.TestNGDemoSession.Session_3"/>
+      <class name="com.TestNGDemoSession.Session_4"/>
+    </classes>
+  </test> <!-- CriticalRegressionTest --> 
+</suite> <!-- CriticalRegressionSuite -->

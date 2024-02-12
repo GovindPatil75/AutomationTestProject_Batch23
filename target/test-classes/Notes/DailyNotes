@@ -593,6 +593,44 @@ testng.xml
 
 TC -- 20 -- peer review --- 25 ---> Test --> 25 PO review  ---5 TC Automation Script
 
+=========================================
+groups ---
+
+cross Browser Test
+-------------
+Testing application feature with multiple Browser 
+
+ex .Chrome ,Edge ,Firefox ....
+
+
+Script ---> 
+
+
+public static WebDriver driver;
+
+@Parameters("BrowserName")
+@BeforeMethod
+public void setUp(String BrowserName){
+
+
+
+  if(BrowserName.equalsignorecase("Chrome")){
+  
+      WebDriverManagaer.chromeDriver().setup();
+      driver=new ChromeDriver();
+  
+  
+  }
+  
+  else if(BrowserName.equalsignorecase("Edge")){
+  
+      WebDriverManagaer.edgeDriver().setup();
+      driver=new EdgeDriver();
+  
+  }
+
+
+}
 
 
 
