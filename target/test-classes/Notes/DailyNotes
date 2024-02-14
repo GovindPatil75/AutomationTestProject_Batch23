@@ -628,13 +628,23 @@ public void setUp(String BrowserName){
       driver=new EdgeDriver();
   
   }
-
-
 }
+=========================================================
 
+Pom with Pagefactory
+-------------
+page object model with pagefactory 
 
+10 webpages = 10 Pom class 
 
+Login --- LoginPom
+Homepage -- HomepagePom
 
+Element repo
+
+testclass 
+--------------
+Pagefactory.
 
 
 

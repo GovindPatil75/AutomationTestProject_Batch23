@@ -5,6 +5,7 @@
   <parameter name="BrowserName" value="Edge"></parameter>
     <classes>
       <class name="com.CrossBrowserTest.FetaureTest_1"/>
+      <class name="com.CrossBrowserTest.TestPom"/>
       <class name="com.CrossBrowserTest.FeatureTest_2">
       <methods>
       <include name="verifyTest_3"></include>
