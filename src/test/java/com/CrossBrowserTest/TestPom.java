@@ -1,26 +1,31 @@
 package com.CrossBrowserTest;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import com.PageObject.LoginPom;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-public class TestPom {
+public class TestPom extends BaseClass{
 	
 	
 	@Test
 	public void verifyTest1() {
 		
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.facebook.com/");
-		driver.manage().window().maximize();
+//		WebDriverManager.chromedriver().setup();
+//		WebDriver driver=new ChromeDriver();
+//		driver.get("https://www.facebook.com/");
+//		driver.manage().window().maximize();
 		
-		LoginPom login=PageFactory.initElements(driver, LoginPom.class);
+		//LoginPom login=new LoginPom(driver);
+		//login.getEmail().sendKeys("Test");
+		
+		login.getEmail().sendKeys("Test");
+		login.getPassword().sendKeys("123");
+		
+		homepage.getelement().sendKeys("Test");
+		
+		//LoginPom login=PageFactory.initElements(driver, LoginPom.class);
 		
 		login.getEmail().sendKeys("Test");
 		login.getPassword().sendKeys("12345678");
