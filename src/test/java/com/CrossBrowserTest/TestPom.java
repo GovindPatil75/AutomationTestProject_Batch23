@@ -1,10 +1,6 @@
 package com.CrossBrowserTest;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-
-import com.PageObject.LoginPom;
 
 public class TestPom extends BaseClass{
 	

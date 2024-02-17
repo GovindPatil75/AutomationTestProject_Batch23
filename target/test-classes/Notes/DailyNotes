@@ -646,9 +646,31 @@ testclass
 --------------
 Pagefactory.
 
+=========================
+pomclass
+    constructor ---
 
+BaseClass 
 
+@BS
+Object POMclass
 
+@BM
+@AM
+
+Library
+
+Test extends BaseClass
+
+@Test
+===================================================
+Assert --result of operation verify 
+
+Assert /Hard Assert---class --TestNG 
+
+SoftAssert /Verify 
+
+Expected string ="Xyz";
 
 
 
