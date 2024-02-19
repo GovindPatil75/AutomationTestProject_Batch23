@@ -671,6 +671,75 @@ Assert /Hard Assert---class --TestNG
 SoftAssert /Verify 
 
 Expected string ="Xyz";
+=========================================================
+Git and Github
+
+Automation QA --Team- Framework --Script
+
+Common Github/BitBucket
+
+Git --version control system 
+
+git init --- initalised empty git repo /.git
+git remote add origin url
+git add .
+git commit -m "message"
+git push origin master
+
+Pull Request --PR raise
+
+git pull origin master
+
+-----------------------
+git download --- Done 
+------------------------------------
+1.
+-------------
+repo crdentials 
+
+url repo 
+
+clone system --- repo ---local system 
+
+git clone url 
+git clone https://github.com/GovindPatil75/TDDFramework.git
+import -eclipse 
+=========================
+master -main branch
+PR raise 
+
+local branch -- pull 
+
+git pull origin master
+
+QA1
+QA2
+QA3
+QA4
+
+PE_1234
+======================
+PR -pull request raise 
+=================================
+
+git branch
+git branch branchname
+git checkout branchname -- switch to local branch
+git pull origin master  -- take lastest code of master to local branch
+
+--Script write 
+
+git add .
+git commit -m "Message"
+git push origin branchname
+
+
+
+
+
+
+
+
 
 
 
