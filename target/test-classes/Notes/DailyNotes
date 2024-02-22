@@ -725,13 +725,96 @@ PR -pull request raise
 git branch
 git branch branchname
 git checkout branchname -- switch to local branch
-git pull origin master  -- take lastest code of master to local branch
+git pull origin master  --repo -local = take lastest code of master to local branch
 
 --Script write 
 
-git add .
-git commit -m "Message"
-git push origin branchname
+git add .   -- add code to stage area 
+git commit -m "Message"  - take permanaent snapshot of code -- commit id 
+git push origin branchname - local -Repo 
+==========================================================
+$ git branch
+* master
+
+Dell@DESKTOP-QVM6J4J MINGW64 ~/eclipse-workspace/DemoBatch22 (master)
+$ git branch PE_1234
+
+Dell@DESKTOP-QVM6J4J MINGW64 ~/eclipse-workspace/DemoBatch22 (master)
+$ git branch
+  PE_1234
+* master
+
+Dell@DESKTOP-QVM6J4J MINGW64 ~/eclipse-workspace/DemoBatch22 (master)
+$ git checkout PE_1234
+Switched to branch 'PE_1234'
+
+Dell@DESKTOP-QVM6J4J MINGW64 ~/eclipse-workspace/DemoBatch22 (PE_1234)
+$ git pull origin master
+From https://github.com/GovindPatil75/DemoBatch22
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Dell@DESKTOP-QVM6J4J MINGW64 ~/eclipse-workspace/DemoBatch22 (PE_1234)
+$ git add .
+
+Dell@DESKTOP-QVM6J4J MINGW64 ~/eclipse-workspace/DemoBatch22 (PE_1234)
+$ git commit -m "Test 3 added"
+[PE_1234 ed7fb1b] Test 3 added
+ 2 files changed, 11 insertions(+)
+ create mode 100644 src/test/java/com/Test/Test_3.java
+ create mode 100644 target/test-classes/com/Test/Test_3.class
+
+Dell@DESKTOP-QVM6J4J MINGW64 ~/eclipse-workspace/DemoBatch22 (PE_1234)
+$ git push origin PE_1234
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (13/13), 1.21 KiB | 1.21 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'PE_1234' on GitHub by visiting:
+remote:      https://github.com/GovindPatil75/DemoBatch22/pull/new/PE_1234
+remote:
+To https://github.com/GovindPatil75/DemoBatch22.git
+ * [new branch]      PE_1234 -> PE_1234
+
+======================================================
+
+git branch branchname 
+git checkout branchname 
+git pull origin master
+--- script write 
+
+git add location 
+git commit -m "message"
+git push origin  branchname
+
+git status --- untraced /modify 
+====================================================
+Selenium Waits 
+
+1.implicit wait
+
+--globally apply all the Elements 
+--throw No such ELement Exception 
+syntax :
+driver.manage().timeout().implicitlywait(Duration.ofsecond(10));
+
+2.Explicit wait 
+----------------------
+ -- applicable perticular element 
+ -- use with condition 
+ --Element not visibile Exception 
+ 
+ syntax :
+ 
+ WebDiverWait wait=new WebDiverWait(driver,Duration.OfSecond(5));
+ wait.until(ExpectedConditions.visibilityofELement(element));
+
+Fluent wait 
+
 
 
 
