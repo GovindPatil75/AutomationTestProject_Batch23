@@ -813,9 +813,9 @@ driver.manage().timeout().implicitlywait(Duration.ofsecond(10));
  WebDiverWait wait=new WebDiverWait(driver,Duration.OfSecond(5));
  wait.until(ExpectedConditions.visibilityofELement(element));
 
-Fluent wait 
+Fluent wait : 30 sec --- 5 sec -- ignore exception 
 
-
+selenium hq 
 
 
 
